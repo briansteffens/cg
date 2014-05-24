@@ -1,0 +1,8 @@
+#!/bin/bash
+
+g++ -std=c++11 -c -o bin/obj_loader.o lib/obj_loader.cpp
+g++ -std=c++11 -c -o bin/main.o main.cpp
+
+g++ -std=c++11 -o bin/main bin/main.o bin/obj_loader.o -lSDL2 -lSDL2_image -lGL -lGLEW -lboost_system
+
+./bin/main

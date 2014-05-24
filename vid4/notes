@@ -1,0 +1,22 @@
+<-> auth [auth_token]
+
+<-  teleport
+		[map-id]
+		[loc]
+
+<-> turn [entity-id] [direction]
+
+<-> move [entity-id] [speed] [start.x] [start.y] [legs[0].direction] [legs[0].tiles] ...
+
+<-> action [entity-id] [action-id] [targets[]?] [tile?]
+
+
+
+
+entity-id
+direction
+position
+speed
+path[]
+hp
+
