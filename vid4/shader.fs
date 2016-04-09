@@ -10,9 +10,9 @@ uniform vec4 tint;
 
 void main(void)
 {
-	vec4 sampled = texture2D(sampler0, texcoord0);
+    vec4 sampled = texture2D(sampler0, texcoord0);
 
-	vec3 clr = mix(sampled.rgb, tint.rgb, tint.a);
-	
-	gl_FragColor = vec4(clr.r, clr.g, clr.b, sampled.a);
+    vec3 clr = mix(sampled.rgb, tint.rgb, tint.a);
+
+    gl_FragColor = vec4(clr.r, clr.g, clr.b, sampled.a);
 }
